@@ -25,6 +25,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{25CDD206-F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{31CE8505-5B6F-43FD-91B6-11604BDEB9E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETAuthentication.Domain.Tests", "NETAuthentication.Domain.Tests\NETAuthentication.Domain.Tests.csproj", "{521D7009-1045-4DBD-990E-643CCCF9A68D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D4747CCE-2526-4042-B11F-8D575917314A}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +68,10 @@ Global
 		{5005E91D-2A7C-46C0-9B9A-4F22DF1B3586}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5005E91D-2A7C-46C0-9B9A-4F22DF1B3586}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5005E91D-2A7C-46C0-9B9A-4F22DF1B3586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{521D7009-1045-4DBD-990E-643CCCF9A68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{521D7009-1045-4DBD-990E-643CCCF9A68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{521D7009-1045-4DBD-990E-643CCCF9A68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{521D7009-1045-4DBD-990E-643CCCF9A68D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,5 +84,6 @@ Global
 		{3DFEC5B5-6BEA-43D9-8C70-34FC3391D969} = {25CDD206-F686-46D3-BEF2-4B63C93A7415}
 		{05B8482B-2F9C-4DC1-935F-20CDF67D1FD4} = {31CE8505-5B6F-43FD-91B6-11604BDEB9E5}
 		{5005E91D-2A7C-46C0-9B9A-4F22DF1B3586} = {31CE8505-5B6F-43FD-91B6-11604BDEB9E5}
+		{521D7009-1045-4DBD-990E-643CCCF9A68D} = {4D968602-EB2C-4A43-85BD-87A0F0C75768}
 	EndGlobalSection
 EndGlobal
