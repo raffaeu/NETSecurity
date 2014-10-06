@@ -39,7 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\IEntity.cs" />
     <Compile Include="Base\IRootAggregate.cs" />
+    <Compile Include="Party\Address.cs" />
     <Compile Include="Party\PersonAggregate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

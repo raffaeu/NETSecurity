@@ -59,5 +59,41 @@ namespace NETAuthentication.Domain.Tests.Party
             var person = PersonAggregate.Create("John", "Smith");
             person.IsValid.Should().BeTrue();
         }
+
+        /// <summary>
+        /// A Person initialized has an empty collection of addresses
+        /// </summary>
+        [TestMethod]
+        public void PersonAggregate_Create_HasEmptyAddress()
+        {
+            var person = PersonAggregate.Create("John", "Smith");
+            person.Addresses.Should().NotBeNull();
+            person.Addresses.Should().BeEmpty();
+        }
+
+        /// <summary>
+        /// If the Address is not valid the Person cannot add it
+        /// </summary>
+        [TestMethod]
+        public void PersonAggregate_Add_InvalidAddress_Fail()
+        {
+            var person = PersonAggregate.Create("John", "Smith");
+            person.AddAddress(string.Empty, string.Empty, string.Empty, string.Empty);
+
+            person.Addresses.Should().BeEmpty();
+        }
+
+        /// <summary>
+        /// If the Address is valid the Person should contain it
+        /// </summary>
+        [TestMethod]
+        public void PersonAggregate_Add_ValidAddress_WillContain()
+        {
+            var person = PersonAggregate.Create("John", "Smith");
+            person.AddAddress("Street", "City", "Country", "ZipCode");
+
+            person.Addresses.Should().NotBeEmpty();
+            person.Addresses.Count.Should().Be(1);
+        }
     }
 }

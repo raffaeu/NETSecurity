@@ -17,7 +17,7 @@ namespace NETAuthentication.Domain.Party
         /// </summary>
         protected PersonAggregate()
         {
-            
+            this.Addresses = new HashSet<Address>();
         }
 
         /// <summary>
@@ -34,6 +34,11 @@ namespace NETAuthentication.Domain.Party
         /// The LastName of the Person
         /// </summary>
         public string LastName { get; private set; }
+
+        /// <summary>
+        /// A Collection of Addresses
+        /// </summary>
+        public ICollection<Address> Addresses { get; private set; }
 
         /// <summary>
         /// Create a new instance of a Person object
@@ -61,6 +66,23 @@ namespace NETAuthentication.Domain.Party
                 return
                     !string.IsNullOrEmpty(this.FirstName)
                     && !string.IsNullOrEmpty(this.LastName);
+            }
+        }
+
+        /// <summary>
+        /// Create a new Address and add it to the collection of Addresses
+        /// </summary>
+        /// <param name="person">The parent Person</param>
+        /// <param name="street">The Street of the Address</param>
+        /// <param name="city">The City of the Address</param>
+        /// <param name="country">The Country of the Address</param>
+        /// <param name="zipCode">The ZipCode of the Address</param>
+        public void AddAddress(string street, string city, string country, string zipCode)
+        {
+            var address = Address.Create(this, street, city, country, zipCode);
+            if (address.IsValid)
+            {
+                this.Addresses.Add(address);
             }
         }
     }
