@@ -1,0 +1,35 @@
+﻿@using System.Web.Optimization
+@{
+    var controllerName = HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+}
+<!DOCTYPE html>
+<html ng-app="modalApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - .NET Authentication</title>
+    @Styles.Render("~/styles/bootstrap")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- header -->
+            <div class="navbar-header">
+                @Html.ActionLink("NET Authentication", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
+    <script src="~/Scripts/ModalStart.js"></script>
+    @RenderSection("scripts", false)
+</body>
+
+</html>

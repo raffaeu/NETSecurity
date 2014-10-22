@@ -44,6 +44,10 @@
     <Compile Include="Party\Address.cs" />
     <Compile Include="Party\PersonAggregate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\RoleAggregate.cs" />
+    <Compile Include="User\UserAggregate.cs" />
+    <Compile Include="User\UserClaim.cs" />
+    <Compile Include="User\UserLogin.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Diagram.cd" />

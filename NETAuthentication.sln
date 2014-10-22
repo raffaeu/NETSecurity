@@ -40,6 +40,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "code", "code", "{653B21CC-5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETAuthentication.ReadApi.Tests", "NETAuthentication.ReadApi.Tests\NETAuthentication.ReadApi.Tests.csproj", "{2EC71C38-A1FE-4894-B3AC-C92AA9957CA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETAuthentication.WriteApi.Tests", "NETAuthentication.WriteApi.Tests\NETAuthentication.WriteApi.Tests.csproj", "{69BD65F6-961B-4F5F-9ED0-096B6223CA9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETAuthentication.Mocks", "NETAuthentication.Mocks\NETAuthentication.Mocks.csproj", "{96625645-5943-4327-8349-913C4C5CFBBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{053A69EB-840D-4A24-AB58-5FFA25CA60AC}"
+	ProjectSection(SolutionItems) = preProject
+		Graph1.dgml = Graph1.dgml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETAuthentication.IdentityApi", "NETAuthentication.IdentityApi\NETAuthentication.IdentityApi.csproj", "{9DECD116-C059-42CD-B79F-F7D82089C90E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +97,18 @@ Global
 		{2EC71C38-A1FE-4894-B3AC-C92AA9957CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EC71C38-A1FE-4894-B3AC-C92AA9957CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EC71C38-A1FE-4894-B3AC-C92AA9957CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69BD65F6-961B-4F5F-9ED0-096B6223CA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69BD65F6-961B-4F5F-9ED0-096B6223CA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69BD65F6-961B-4F5F-9ED0-096B6223CA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69BD65F6-961B-4F5F-9ED0-096B6223CA9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96625645-5943-4327-8349-913C4C5CFBBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96625645-5943-4327-8349-913C4C5CFBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96625645-5943-4327-8349-913C4C5CFBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96625645-5943-4327-8349-913C4C5CFBBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DECD116-C059-42CD-B79F-F7D82089C90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DECD116-C059-42CD-B79F-F7D82089C90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DECD116-C059-42CD-B79F-F7D82089C90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DECD116-C059-42CD-B79F-F7D82089C90E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,5 +127,8 @@ Global
 		{521D7009-1045-4DBD-990E-643CCCF9A68D} = {4D968602-EB2C-4A43-85BD-87A0F0C75768}
 		{8983C164-0C4E-4DB7-8189-313DAA75B3A0} = {4D968602-EB2C-4A43-85BD-87A0F0C75768}
 		{2EC71C38-A1FE-4894-B3AC-C92AA9957CA8} = {4D968602-EB2C-4A43-85BD-87A0F0C75768}
+		{69BD65F6-961B-4F5F-9ED0-096B6223CA9B} = {4D968602-EB2C-4A43-85BD-87A0F0C75768}
+		{96625645-5943-4327-8349-913C4C5CFBBE} = {4D968602-EB2C-4A43-85BD-87A0F0C75768}
+		{9DECD116-C059-42CD-B79F-F7D82089C90E} = {31CE8505-5B6F-43FD-91B6-11604BDEB9E5}
 	EndGlobalSection
 EndGlobal

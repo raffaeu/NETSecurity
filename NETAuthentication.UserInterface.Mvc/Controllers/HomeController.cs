@@ -11,6 +11,7 @@ namespace NETAuthentication.UserInterface.Mvc.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            ViewBag.Title = "Welcome to NET Security Project";
             return View();
         }
     }

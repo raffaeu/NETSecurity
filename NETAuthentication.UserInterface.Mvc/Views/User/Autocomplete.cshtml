@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/Views/Shared/_EmptyLayout.cshtml";
+}
+
+<div>
+    <div class="page-header" ng-controller="ModalController" ng-init="modalViewModel.initialize()">
+        <h1>NET Authentication <small>Social {{modalViewModel.Operation}}</small></h1>
+        <p>
+            <blockquote>
+                <i class="fa fa-info-circle">&nbsp;</i>
+                The redirection with your Social account is complete, please read
+                the information below.
+            </blockquote>
+        </p>
+
+        <!-- Login succeed -->
+        <div class="panel panel-success" ng-show="modalViewModel.Operation == 'login' && !modalViewModel.HasErrors">
+            <div class="panel-heading">
+                <span><i class="fa fa-openid">&nbsp;</i>Authentication complete with <strong>{{modalViewModel.Provider}}</strong></span>
+            </div>
+            <div class="panel-body">
+                <p>The authentication with your Social account succeed</p>
+                <p>The User <strong>{{modalViewModel.Username}}</strong> is authenticated.</p>
+                <p>The Token assigned is <strong>{{modalViewModel.Token}}</strong></p>
+            </div>
+        </div>
+
+        <!-- Login failed -->
+        <div class="panel panel-danger" ng-show="modalViewModel.Operation == 'login' && modalViewModel.HasErrors">
+            <div class="panel-heading">
+                <span><i class="fa fa-remove">&nbsp;</i>Authentication failed with <strong>{{modalViewModel.Provider}}</strong></span>
+            </div>
+            <div class="panel-body">
+                <p>The authentication with your Social account failed</p>
+                <p><strong>Error details: </strong><span>{{modalViewModel.ErrorMessage}}</span></p>
+            </div>
+        </div>
+        
+        <!-- Association succeed -->
+        <div class="panel panel-success" ng-show="modalViewModel.Operation == 'register' && !modalViewModel.HasErrors">
+            <div class="panel-heading">
+                <span><i class="fa fa-openid">&nbsp;</i>Association complete with <strong>{{modalViewModel.Provider}}</strong></span>
+            </div>
+            <div class="panel-body">
+                <p>The association with your Social account succeed</p>
+                <p>The User <strong>{{modalViewModel.Username}}</strong> is associated.</p>
+            </div>
+        </div>
+        
+        <!-- Association failed -->
+        <div class="panel panel-danger" ng-show="modalViewModel.Operation == 'register' && modalViewModel.HasErrors">
+            <div class="panel-heading">
+                <span><i class="fa fa-remove">&nbsp;</i>Association failed with <strong>{{modalViewModel.Provider}}</strong></span>
+            </div>
+            <div class="panel-body">
+                <p>The association with your Social account failed</p>
+                <p><strong>Error details: </strong><span>{{modalViewModel.ErrorMessage}}</span></p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="button" class="btn btn-default" value="Close" ng-click="modalViewModel.close()" />
+        </div>
+
+        <div>
+            <p>The Popup will close within <strong id="timeoutLabel"></strong> seconds.</p>
+            <p class="small">Or you can use the Close button below.</p>
+        </div>
+    </div>
+</div>

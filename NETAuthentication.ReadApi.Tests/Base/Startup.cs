@@ -1,5 +1,4 @@
-﻿using NETAuthentication.ReadApi.App_Start;
-using Owin;
+﻿using Owin;
 using System.Web.Http;
 
 namespace NETAuthentication.ReadApi.Tests.Base

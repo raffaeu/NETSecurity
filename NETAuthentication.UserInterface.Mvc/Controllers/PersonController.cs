@@ -8,9 +8,24 @@ namespace NETAuthentication.UserInterface.Mvc.Controllers
 {
     public class PersonController : Controller
     {
-        // GET: Person
+        [HttpGet]
         public ActionResult Index()
         {
+            ViewBag.Title = "Persons Management";
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Search()
+        {
+            ViewBag.Title = "Persons Search";
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Create()
+        {
+            ViewBag.Title = "Person Create";
             return View();
         }
     }

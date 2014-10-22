@@ -9,6 +9,9 @@
     padding-right: 15px;
 }
 
+.container {
+    margin-top: 30px;
+}
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
@@ -16,3 +19,18 @@ textarea {
     max-width: 280px;
 }
 
+.thumbnail > img {
+    width: 128px;
+    height: 128px;
+}
+
+button {
+    min-width: 120px;
+}
+
+.modal-dialog-center { /* Edited classname 10/03/2014 */
+  transform: translate(0, 40%) !important;
+  -ms-transform: translate(0, 40%) !important; /* IE 9 */
+  -webkit-transform: translate(0, 40%) !important; /* Safari and Chrome */
+
+}

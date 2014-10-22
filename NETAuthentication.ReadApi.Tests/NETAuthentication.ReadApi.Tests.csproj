@@ -105,6 +105,7 @@
   <ItemGroup>
     <Compile Include="Base\DatabaseTestFactory.cs" />
     <Compile Include="Base\Startup.cs" />
+    <Compile Include="Controllers\UserController_Fixtures.cs" />
     <Compile Include="Controllers\PersonController_Fixtures.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

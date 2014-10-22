@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Web;
 using System.Web.Http;
-using System.Web.Security;
-using System.Web.SessionState;
-using NETAuthentication.ReadApi.App_Start;
 
 namespace NETAuthentication.ReadApi
 {
@@ -14,7 +8,7 @@ namespace NETAuthentication.ReadApi
         protected void Application_Start()
         {
             // configure routes
-            GlobalConfiguration.Configuration.Routes.MapHttpRoute("Default", 
+            GlobalConfiguration.Configuration.Routes.MapHttpRoute("Default",
                 "{controller}/{id}", new
                 {
                     id = RouteParameter.Optional

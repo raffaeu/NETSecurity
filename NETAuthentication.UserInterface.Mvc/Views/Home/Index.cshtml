@@ -1,2 +1,53 @@
-﻿<h2>Index</h2>
+﻿<div class="page-header">
+    <h1>NET Authentication <small>Home Page</small></h1>
+    <p>
+        This area is used to manage the <strong>Entities</strong>.
+    </p>
+</div>
 
+<div class="row">
+    <!-- USER MANAGEMENT -->
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="~/Content/Images/100x100/Users.png" alt="...">
+            <div class="caption">
+                <h3>User Management</h3>
+                <p>Manage Users</p>
+                <p>
+                    <a href="@Url.Action("Index", "User")" class="btn btn-default" role="button">Browse</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PERSON MANAGEMENT -->
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="~/Content/Images/100x100/Persons.png" alt="...">
+            <div class="caption">
+                <h3>Person Management</h3>
+                <p>Manage Persons</p>
+                <p>
+                    <a href="@Url.Action("Index", "Person")" class="btn btn-default" role="button">Browse</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT MANAGEMENT -->
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="~/Content/Images/100x100/Products.png" alt="...">
+            <div class="caption">
+                <h3>Product Management</h3>
+                <p>Manage Products</p>
+                <p>
+                    <a href="@Url.Action("Index", "Product")" class="btn btn-default" role="button">Browse</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+</div>

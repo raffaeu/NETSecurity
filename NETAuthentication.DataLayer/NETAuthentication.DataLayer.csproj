@@ -50,6 +50,8 @@
   <ItemGroup>
     <Compile Include="Base\DatabaseContext.cs" />
     <Compile Include="Mappings\PersonAggregateMap.cs" />
+    <Compile Include="Mappings\RoleAggregateMap.cs" />
+    <Compile Include="Mappings\UserAggregateMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

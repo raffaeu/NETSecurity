@@ -1,17 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="NETAuthentication.Domain.Party.PersonAggregate">
-    <Position X="3.75" Y="1.25" Width="1.75" />
+  <Class Name="NETAuthentication.Domain.User.UserAggregate">
+    <Position X="4.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAEAAAAAAAAAAAAgAAAAAAAAAAEAAAAAAAAAAAAg=</HashCode>
-      <FileName>Party\PersonAggregate.cs</FileName>
+      <HashCode>AACCIAAAACAAAAQAAQgBAAAAAAAAAEAIAAAQAAIAAAA=</HashCode>
+      <FileName>User\UserAggregate.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Claims" />
+      <Property Name="Logins" />
+    </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="NETAuthentication.Domain.Base.IRootAggregate">
-    <Position X="1.25" Y="0.75" Width="1.5" />
+  <Class Name="NETAuthentication.Domain.User.UserClaim">
+    <Position X="7.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAEDAAAAAAAAAAAAAAgAAAAAAAAAAEACAQAgAAAAEAA=</HashCode>
+      <FileName>User\UserClaim.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NETAuthentication.Domain.User.UserLogin">
+    <Position X="1.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAAAAgAAAAAAAAAAEAAABAAAAAQAAA=</HashCode>
+      <FileName>User\UserLogin.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="NETAuthentication.Domain.Base.IRootAggregate" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Base\IRootAggregate.cs</FileName>
     </TypeIdentifier>
   </Interface>

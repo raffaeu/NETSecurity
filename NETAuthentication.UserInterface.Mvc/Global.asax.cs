@@ -19,9 +19,9 @@ namespace NETAuthentication.UserInterface.Mvc
 
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            //WebApiConfig.Register(GlobalConfiguration.Configuration);
-            //FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            DemoConfig.RegisterDemo();
         } 
     }
 }

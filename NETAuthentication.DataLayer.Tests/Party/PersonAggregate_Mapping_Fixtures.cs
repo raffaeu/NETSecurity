@@ -17,7 +17,17 @@ namespace NETAuthentication.DataLayer.Tests.Party
         private string connectionString = string.Empty;
 
         [TestInitialize]
-        public void TestInitialize()
+        public void Initialize()
+        {
+            using (DatabaseContext databaseContext = DatabaseTestFactory.GetSession())
+            {
+                databaseContext.Database.Delete();
+                databaseContext.Database.Create();
+            }
+        }
+
+        [TestCleanup]
+        public void Cleanup()
         {
             using (DatabaseContext databaseContext = DatabaseTestFactory.GetSession())
             {
